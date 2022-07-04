@@ -1,12 +1,14 @@
-import { createApp } from "vue";
+import { createApp } from 'vue';
+import App from './App.vue';
 
-import App from "./App.vue";
-import FriendContact from "./components/FriendContact.vue";
-import NewFriend from "./components/NewFriend.vue";
+import CardBase from './components/ui/CardBase.vue';
+import ButtonBase from './components/ui/ButtonBase.vue';
+import DialogBase from './components/ui/DialogBase.vue';
 
 const app = createApp(App);
 
-app.component("friend-contact", FriendContact);
-app.component("new-friend", NewFriend);
+app.component('card-base', CardBase);
+app.component('button-base', ButtonBase);
+app.component('dialog-base', DialogBase);
 
-app.mount("#app");
+app.mount('#app');
